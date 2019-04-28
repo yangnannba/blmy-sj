@@ -61,9 +61,7 @@ body { font-family: 'Heiti SC', 'Microsoft YaHei', "Helvetica Neue", Helvetica, 
 .navbar-toggle { padding: 0.28rem 0.3rem !important; }
 
 /*首页*/
-.banner { margin-bottom: 0.95rem; }
-
-.myloading { font-size: 0.425rem; line-height: 1.6em; text-align: center; margin-bottom: 0.9rem; }
+.myloading { font-size: 0.425rem; line-height: 1.6em; text-align: center; margin-bottom: 0.9rem; margin-top: 0.95rem; }
 .myloading:before { content: ""; width: 1rem; height: 0.05rem; display: block; margin: 0 auto 0.5rem; background: #d4b78e; }
 
 .footer { background: #202020; padding: 1.25rem 0; }
@@ -112,5 +110,15 @@ body { font-family: 'Heiti SC', 'Microsoft YaHei', "Helvetica Neue", Helvetica, 
 .crowd .ksl p { font-size: 0.4rem; line-height: 1.8em; text-align: justify; }
 
 /*关于品牌*/
+.about-1 { padding: 1.15rem 0.85rem; background: #f3f0ec; }
+.about-1 h2 { font-size: 0.45rem; font-family: "新宋体"; color: #b88743; text-align: center; }
+.about-1 p { font-size: 0.4rem; text-align: justify; margin-bottom: 0.4rem; text-indent: 2em; }
+.about-1 img { margin-bottom: 0.4rem; }
+
+.about-2 { padding: 1.15rem 0.85rem; }
+.about-2 h2 { font-size: 0.55rem; color: #b88743; text-align: center; font-weight: normal; margin-bottom: 0.6rem; }
+.about-2 p { font-size: 0.4rem; text-align: justify; margin-bottom: 0.4rem; text-indent: 2em; }
+.about-2 p.blmy { text-align: center; color: #b88743; }
+.about-2 img { width: 80%; margin: 0 auto 0.4rem; }
 
 /*# sourceMappingURL=styles.css.map */
