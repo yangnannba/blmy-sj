@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />	
+
+	
+	<script type="text/javascript" src="js/reset.js"></script>
+	<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->	
+<link rel="stylesheet" href="css/bootstrap.css">	
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>		
+</head>
+
+<body>
+<div class="fixed-nav">
+<nav class="navbar navbar-default mynav">
+  <div class="container-fluid">
+	<div class="logo"><img src="images/logo.png" alt="" /></div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页</a></li>		
+        <li><a href="#">产品中心</a></li>		
+        <li><a href="#">品牌动态</a></li>	
+        <li><a href="#">招商加盟</a></li>		
+        <li><a href="#">关于品牌</a></li>	
+      </ul>
+
+    </div>
+  </div>
+</nav>	
+</div>	
+
+<div class="banner">
+	<img src="images/banner-4.jpg"  />
+</div>
+
+<div class="pflh">
+	<div class="pflh-h">	
+		<h2 class="h2">肌肤为什么会老化?</h2>
+		<h3 class="h3">Why does the skin age?</h3>
+	</div>
+	<div class="pflh-img">
+		<img src="images/pflh.png" />
+	</div>	
+</div>
+
+<div class="cause">
+	<ul class="cause-ul">
+		<li id="li1" class="hover" onmouseover="set('li',1,2)">
+			<h2>肌肤老化内因</h2>
+			<h3>Internal causes of skin aging</h3>
+		</li>		
+		<li id="li2" onmouseover="set('li',2,2)">
+			<h2>肌肤老化外因</h2>
+			<h3>External factors of skin aging</h3>			
+		</li>
+	</ul>
+	<ul>
+		<li id="conli1" style="display:block;"><img src="images/internal.png" /></li>
+		<li id="conli2" style="display:none;"><img src="images/external.png" /></li>
+	</ul>
+<script>
+
+	function set(name,cursel,n){
+		for(i=1;i<=n;i++){
+			var menu=document.getElementById(name+i);
+			var con =document.getElementById("con"+name+i);
+			menu.className=i==cursel?"hover":"";
+			con.style.display=i==cursel?"block":"none";
+		}	
+	}
+</script>	
+</div>
+
+<div class="">
+	<img src="images/xiao-banner-1.jpg" />
+</div>
+<div class="skins">
+    <img src="images/skins-img.jpg"  />
+	<div class="zfxs-h">
+		<h2 class="h2">六大臻肤享受</h2>
+		<h3 class="h3">Six skins enjoy</h3>		
+	</div>
+</div>
+<div class="moisturize">
+	<div class="moisturize-h">
+		<h2 class="h2">五重营养物质润泽肌肤</h2>
+		<h3 class="h3">Five nutrients moisturize skin</h3>		
+	</div>
+	<ul class="moisturize-ul">
+		<li>
+			<dl>
+				<dt><img src="images/moisturize-1.png" /></dt>
+				<dd>
+					<h3>类蛇毒肽  <span>(抗衰抗皱)</span></h3>
+					<p>类蛇毒肽在减少动态纹的功效方面是类肉毒杆菌的5倍,是一种类似蛇毒毒素结构的活性肽。它能通过抑制肌肉收缩而减少皱纹的产生。与类蛇毒肽冻龄原液传统的六胜肽相比， 效果更加明显。</p>		
+				</dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dt><img src="images/moisturize-2.png" /></dt>
+				<dd>
+					<h3>榈酰三肽-5   <span>(增强细胞活性)</span></h3>
+					<p>棕榈酰三肽-5可以促进真皮层中胶原蛋白和弹性蛋白合成的性能，是一种加速胶原蛋白生成和修复皱纹的理想原料。能帮助肌肤补充胶原蛋白，提升面部弹性，显著减少脸部皱纹。同时它还具有增强细胞活性，提升肌肤含水量，增强肌肤光泽，改善肤色的特性。</p>		
+				</dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dt>
+					<img src="images/moisturize-3.png" />
+					<h3>透明质酸钠<br /><span>(保持肌肤水分)</span></h3>
+					</dt>
+				<dd>
+					<p>于1934年被KARL MEYER从牛眼玻璃体中发现，它是从牛眼玻璃体中提取的一种大分子多糖。具有抗衰老和保鲜和采用生物技术三大特点。是人体皮肤的构成之一，是人体内分布最广的一种酸性黏糖，存在于结缔组织的基质中，具有良好的保湿作用。可渗入皮肤表皮层，促进皮肤营养的供给和废物的排泄，从而防止皮肤老化，起到美容和养颜作用属于高分子聚合物，具有很强的润滑感和成膜性。涂抹时润滑感明显，手感良好,涂于皮肤后，可在皮肤表面形成一层薄膜，使皮肤产生良好的光滑感和湿润感。</p>		
+				</dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dt>
+					<img src="images/moisturize-4.png" />
+					<h3>神经酰胺3<br /><span>(锁住肌肤水分)</span></h3>
+				</dt>
+				<dd>
+					<p>是一种脂质物质，它和构成皮肤角质层的物质结构相近，能很快渗透进皮肤，帮助皮肤天然保护层的更新，能促进自然水合作用的平衡，和角质层中的水结合，形成一种网状结构，锁住水分。对肌肤保湿修护有良好作用，是角质层中重要的活肤成分，能增强皮肤屏障，重建细胞，形成有效的屏障来防止水分流失和减少外部环境的影响。受刺激的皮肤尤其需要更多的神经酰胺，有研究表明，擦含有神经酰胺成分的产品能减少红肿和经皮水分流失，起到增强皮肤屏障并帮助受损肌肤缓解干燥状态的作用。</p>		
+				</dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dt><img src="images/moisturize-5.png" /></dt>
+				<dd>
+					<h3>马齿苋及银耳多糖  <span> (抗氧化抗衰)</span></h3>
+					<p>马齿苋含有丰富的二羟乙胺、苹果酸、葡萄糖、钙、磷、铁以及维生素等营养物质。银耳多糖为担子菌多糖类免疫增强剂，有改善机体免疫功能及提升白细胞的作用。促进细胞因子生长,保护红细胞膜不易受到氧化损伤。可以促进蛋白质和核酸合成，增加自身的修复能力。</p>		
+				</dd>
+			</dl>
+		</li>
+	</ul>
+</div>
+
+<div class="footer">
+	<img class="footer-logo" src="images/logo.png"  />
+	<div class="footer-lianxi">
+		<ul class="footer-lianxi-left">
+			<li class="tel">400-837-3518</li>
+			<li class="weixin">zhy964791196</li>
+		</ul>
+		<div class="footer-lianxi-right">
+			<img src="images/ewf.png"  />
+		</div>
+	</div>
+	<p class="bah">备案号：123412341234 技术支持：峰任营销策划</p>
+</div>
+
+
+
+</body>
+</html>

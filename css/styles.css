@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face { font-family: myhelvnul; src: url("../fonts/HELVNUL.TTF"); }
-.clearfix:after { content: ""; height: 0; display: block; clear: both; visibility: hidden; }
+.clearfix:after, .moisturize-ul dl:after { content: ""; height: 0; display: block; clear: both; visibility: hidden; }
 
-.advantage-ul { font-size: 0; -webkit-text-size-adjust: none; }
+.advantage-ul, .product-fenye, .cause-ul { font-size: 0; -webkit-text-size-adjust: none; }
 
 /* 设置HTML5元素为块 */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -68,11 +68,12 @@ body { font-family: 'Heiti SC', 'Microsoft YaHei', "Helvetica Neue", Helvetica, 
 .footer .footer-logo { width: 2.9rem; margin: 0 auto; }
 .footer .bah { text-align: center; font-size: 0.35rem; color: #8d8d8d; }
 .footer .footer-lianxi { text-align: center; border-bottom: 1px solid #8f6c3a; padding-bottom: 0.5rem; width: 70%; margin: 1rem auto 1.125rem; }
-.footer .footer-lianxi .footer-lianxi-left { width: 3rem; display: inline-block; margin-right: 1.5rem; }
+.footer .footer-lianxi .footer-lianxi-left { width: 4rem; display: inline-block; margin-right: 1.5rem; }
 .footer .footer-lianxi li { font-size: 0.4rem; color: #f3f3f3; text-align: center; }
 .footer .footer-lianxi .tel:before { content: ""; width: 0.65rem; height: 0.65rem; display: block; background: url(../images/icon-tel.png) no-repeat; background-size: 100% 100%; margin: 0 auto; }
 .footer .footer-lianxi .weixin:before { content: ""; width: 0.65rem; height: 0.65rem; display: block; background: url(../images/icon-weixin.png) no-repeat; background-size: 100% 100%; margin: 0 auto; }
-.footer .footer-lianxi-right { width: 2.75rem; height: 2.75rem; display: inline-block; margin-left: 1.5rem; }
+.footer .footer-lianxi-right { width: 4rem; display: inline-block; margin-left: 1.5rem; }
+.footer .footer-lianxi-right img { width: 2.75rem; height: 2.75rem; margin: 0 auto; }
 
 .skins { position: relative; }
 .skins .zfxs-h { position: absolute; font-family: "新宋体"; top: 1rem; left: 0; width: 100%; text-align: center; }
@@ -120,5 +121,86 @@ body { font-family: 'Heiti SC', 'Microsoft YaHei', "Helvetica Neue", Helvetica, 
 .about-2 p { font-size: 0.4rem; text-align: justify; margin-bottom: 0.4rem; text-indent: 2em; }
 .about-2 p.blmy { text-align: center; color: #b88743; }
 .about-2 img { width: 80%; margin: 0 auto 0.4rem; }
+
+/* 品牌动态列表页*/
+.dongtai-list { margin: 1.1rem auto; padding: 0 0.85rem; text-align: left; }
+
+.dongtai-list li { border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; padding-top: 0.5rem; padding-left: 0.5rem; }
+
+.dongtai-list li:nth-child(1) { background: #b88743; display: block; }
+.dongtai-list li:nth-child(1) dt, .dongtai-list li:nth-child(1) dd p { color: #fff; }
+.dongtai-list li:nth-child(1) dl:after { content: ""; background: url(../images/right-hover-icon.png) no-repeat; background-size: 100%; }
+
+.dongtai-list li:nth-last-child(1) { border-bottom: 0; }
+
+.dongtai-list li:hover { background: #b88743; display: block; }
+.dongtai-list li:hover dt, .dongtai-list li:hover dd p { color: #fff; }
+.dongtai-list li:hover dl:after { content: ""; background: url(../images/right-hover-icon.png) no-repeat; background-size: 100%; }
+
+.dongtai-list dl { position: relative; }
+
+.dongtai-list dl:after { content: ""; width: 0.275rem; height: 0.425rem; background: url(../images/right-icon.png) no-repeat; background-size: 100%; display: block; position: absolute; right: 0.5rem; top: 0.5rem; }
+
+.dongtai-list dt { color: #6b645f; font-size: 0.5rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-right: 1rem; }
+
+.dongtai-list dd p { color: #8e8781; font-size: 0.4rem; padding-right: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.product-fenye { text-align: center; margin: 1rem auto 1.65rem; }
+
+.product-fenye li { font-size: 0.45rem; display: inline-block; margin: 0 0.2rem; border: 1px solid #6b645f; padding: 0.05rem 0.3rem; box-sizing: border-box; }
+
+.product-fenye li a { color: #000; }
+
+.product-fenye li.thisclass { color: #fff; background: #b88743; padding: 0.15rem 0.3rem; border: 0; box-sizing: border-box; }
+
+/*文章页*/
+.article { margin-top: 1.25rem; }
+.article h1 { text-align: center; color: #b88743; font-size: 0.525rem; }
+.article .time { text-align: center; font-size: 0.4rem; color: #6b645f; margin-bottom: 0.5rem; }
+.article .article-main { margin: 0 0.85rem; background-color: #faf7f3; padding: 0.6rem; line-height: 1.75em; font-size: 0.4rem; margin-bottom: 1.25rem; }
+.article .article-main p { margin-bottom: 0.25rem; }
+.article .article-main img { width: auto; max-width: 100%; margin: 0.5rem auto; }
+.article .article-main-body { margin-bottom: 0.5rem; text-indent: 2em; }
+
+.pre-next { font-size: 0.4rem; line-height: 2em; }
+.pre-next li { margin-bottom: 0.2rem; }
+.pre-next li a { color: #333333; }
+.pre-next li a span { border: 1px solid #ccc; display: inline-block; padding: 0.05rem 0.75rem; margin-right: 0.25rem; }
+
+.ab { position: relative; }
+.ab .fanhui { position: absolute; right: 0; bottom: 0; font-size: 0.4rem; color: #d4b78e; border: 1px solid #d4b78e; padding: 0.1rem 0.5rem; }
+.ab .fanhui:after { content: ""; width: 0.35rem; height: 0.35rem; display: inline-block; background: url(../images/left-icon.png) no-repeat; background-size: 100% 100%; vertical-align: center; margin-left: 0.2rem; }
+
+/*产品介绍*/
+.pflh { margin-top: 1.35rem; margin-bottom: 1.15rem; }
+.pflh .pflh-h { text-align: center; margin-bottom: 0.6rem; }
+.pflh h2.h2 { font-size: 0.6rem; color: #000000; font-family: "新宋体"; }
+.pflh h3.h3 { font-weight: normal; font-size: 0.4rem; color: #b88743; line-height: 1em; font-family: "新宋体"; }
+.pflh .pflh-img { width: 85%; margin: 0 auto; }
+
+.cause { background: #f8f2e4; padding: 1rem 0.85rem; }
+
+.cause-ul { text-align: center; margin-bottom: 0.625rem; }
+.cause-ul li { width: 49.9%; display: inline-block; padding: 0.4rem 0; }
+.cause-ul li h2 { font-size: 0.6rem; color: #000000; font-family: "新宋体"; }
+.cause-ul li h3 { font-weight: normal; font-size: 0.35rem; color: #b88743; line-height: 1em; font-family: "新宋体"; }
+.cause-ul li.hover { background: #b88743; }
+.cause-ul li.hover h2, .cause-ul li.hover h3 { color: #fff; }
+
+.moisturize { margin: 0.95rem 0; }
+.moisturize .moisturize-h { text-align: center; margin-bottom: 0.6rem; }
+.moisturize h2.h2 { font-size: 0.6rem; color: #000000; font-family: "新宋体"; }
+.moisturize h3.h3 { font-weight: normal; font-size: 0.4rem; color: #b88743; line-height: 1em; font-family: "新宋体"; }
+
+.moisturize-ul { padding: 0 0.85rem; }
+.moisturize-ul li { background: #fafafa; -webkit-border-radius: 0.2rem; -moz-border-radius: 0.2rem; border-radius: 0.2rem; border: 1px solid #c09559; margin-bottom: 0.25rem; }
+.moisturize-ul dl { padding: 0.5rem; }
+.moisturize-ul dt { width: 2.75rem; height: 2.75rem; float: left; }
+.moisturize-ul dt h3 { font-size: 0.425rem; text-align: center; }
+.moisturize-ul dt h3 span { color: #7b7b7b; font-size: 0.375rem; }
+.moisturize-ul dd { float: right; width: 76%; }
+.moisturize-ul dd h3 { font-size: 0.425rem; }
+.moisturize-ul dd h3 span { color: #7b7b7b; }
+.moisturize-ul dd p { font-size: 0.35rem; color: #575757; line-height: 1.6em; }
 
 /*# sourceMappingURL=styles.css.map */
